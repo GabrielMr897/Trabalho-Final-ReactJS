@@ -1,4 +1,5 @@
 import React from "react";
+
 import { Home }  from "./pages/home/Home.jsx";
 import Global from "./styles/global";
 import "./App.css"
@@ -20,8 +21,7 @@ function App() {
             <Route path="/sobre" element={<Sobre/>}/>
             
       </Routes>
-    </Router>
-    </>
+
   );
 }
 
