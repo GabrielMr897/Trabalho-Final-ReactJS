@@ -1,12 +1,23 @@
 import React from "react";
-import { Home } from "./screens/Home";
+import { Home } from "./components/mainpage/Home.jsx";
 import Global from "./styles/global";
+import "./App.css"
+import { BrowserRouter as Router,Route, Link } from "react-router-dom";
+
+
+
+import { Header } from "./components/header/Header.jsx" 
+
+
 
 function App() {
+
+
   return (
     <>
-      <Global />
-      <Home />
+    <Router>
+      <Header/>
+    </Router>
     </>
   );
 }
