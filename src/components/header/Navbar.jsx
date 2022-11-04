@@ -14,24 +14,16 @@ export const Navbar = () => {
                 <div className="navlink">
                     <ul className={MobileMenu ? "nav-links-mobile" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
                         <li>
-                             <Link to="/">home</Link> 
+                             <Link to="/">Início</Link> 
+                        </li>
+
+                        <li>
+                             <Link to="/sobre">Sobre nós</Link> 
                         </li>
                         <li>
-                             <Link to="/pages">pages</Link> 
+                             <Link to="/contato">Contato</Link> 
                         </li>
-                        <li>
-                             <Link to="/user">user account</Link> 
-                        </li>
-                        <li>
-                             <Link to="/vendor">vendor account</Link> 
-                        </li>
-                        <li>
-                             <Link to="/track">track my order</Link> 
-                        </li>
-                        
-                        <li>
-                             <Link to="/contact">contact</Link> 
-                        </li>
+
                         
                     </ul>
 
