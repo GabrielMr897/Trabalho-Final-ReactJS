@@ -1,13 +1,11 @@
 import React from "react";
-import { Home } from "./components/mainpage/Home.jsx";
+import { Home }  from "./pages/home/Home.jsx";
 import Global from "./styles/global";
 import "./App.css"
-import { BrowserRouter as Router,Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes ,Route} from "react-router-dom";
 
-
-
-import { Header } from "./components/header/Header.jsx" 
-
+import { Contato } from "./pages/contato/Contato.jsx" 
+import { Sobre } from "./pages/sobre/Sobre.jsx"
 
 
 function App() {
@@ -16,7 +14,12 @@ function App() {
   return (
     <>
     <Router>
-      <Header/>
+      <Routes>
+            <Route path="/" element={<Home/>}/>
+            <Route path="/contato" element={<Contato/>}/>
+            <Route path="/sobre" element={<Sobre/>}/>
+            
+      </Routes>
     </Router>
     </>
   );

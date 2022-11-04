@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { pxvwp } from "../../../src/uteis/pxvwp";
+import { pxvwp } from "../../uteis/pxvwp";
 
 export const Container = styled.div`
   display: flex;
