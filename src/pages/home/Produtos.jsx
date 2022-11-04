@@ -5,7 +5,7 @@ import api from "../../service/api.js"
 
 
 export const Produtos = () => {
-    const [produtos, setProduto] = useState([]);
+    const [produtos, setProduto] = useState();
     useEffect(() => {
       api
         .get("/produto")
