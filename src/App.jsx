@@ -21,7 +21,8 @@ function App() {
             <Route path="/sobre" element={<Sobre/>}/>
             
       </Routes>
-
+      </Router>
+    </>
   );
 }
 
