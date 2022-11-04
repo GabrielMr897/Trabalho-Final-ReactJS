@@ -59,6 +59,7 @@
 header {
   height: 8vh;
   box-shadow: -1px 15px 17px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 header ul {
   line-height: 8vh;

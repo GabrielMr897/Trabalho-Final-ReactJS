@@ -18,6 +18,14 @@ body {
   max-width: 90%;
   margin: auto;
 }
+.w-90 {
+  width: 90%;
+  margin: auto;
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
 .d_flex {
   display: flex;
   justify-content: space-between;
