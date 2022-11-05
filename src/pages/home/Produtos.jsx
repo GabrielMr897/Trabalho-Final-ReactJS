@@ -8,7 +8,7 @@ import {
 } from "../../components/Cards/Card.jsx";
 import api from "../../service/api.js";
 
-export const Produtos = ({ Cardbox }) => {
+export const Produtos = () => {
   const [produtos, setProduto] = useState([]);
   useEffect(() => {
     api
@@ -26,7 +26,7 @@ export const Produtos = ({ Cardbox }) => {
         {produtos?.map((produto) => {
           return (
             <Card key={produto.id}>
-              <CardImg src={produto.foto} />
+              <CardImg src={produto.fotoLink}></CardImg>
               <CardTitle>{produto.nome}</CardTitle>
               <CardText>R$ {produto.valor}</CardText>
               <CardTitle></CardTitle>
