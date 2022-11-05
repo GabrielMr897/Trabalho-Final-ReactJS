@@ -3,7 +3,7 @@ import balacobanner2 from "../../assets/balacobanner2.png"
 import balacobanner3 from "../../assets/balacobanner3.png"
 import next from "../../assets/proximo.png"
 import prev from "../../assets/anterior.png"
-import "./home.css"
+import "./Home.css"
 export const Slide = () => {
 
 
