@@ -18,8 +18,8 @@ export const Search = () => {
 
           <div className="search-box f_flex">
             <i className="fa fa-search"></i>
-            <input type="text" placeholder="Search and hit enter" />
-            <span>All category</span>
+            <input type="text" placeholder="Busque seu produto do balacobaco" />
+            <span></span>
           </div>
 
           <div className="icon f_flex width">
