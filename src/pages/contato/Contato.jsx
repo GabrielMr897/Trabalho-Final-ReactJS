@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 
-import { Header } from "../../components/header/Header.jsx"
-
+import { Header } from "../../components/header/Header.jsx";
 
 export const Contato = () => {
-    return (
+  return (
     <>
-    <Header/>
-    <h1>EM BREVE</h1>
+      <Header />
+      <h1>EM BREVE</h1>
     </>
-    )
-}
+  );
+};
