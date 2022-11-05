@@ -7,11 +7,10 @@ import {
   Container,
 } from "../../components/Cards/Card.jsx";
 import api from "../../service/api.js";
-import { Link } from "react-router-dom";
 
+import { Link } from "react-router-dom"
 
-
-export const Produtos = ({ Cardbox }) => {
+export const Produtos = () => {
   const [produtos, setProduto] = useState([]);
   useEffect(() => {
     api
@@ -29,11 +28,10 @@ export const Produtos = ({ Cardbox }) => {
         {produtos?.map((produto) => {
           return (
             <Card key={produto.id}>
-              <Link to={`/produto/${produto.id}`} >
-              <CardImg src={produto.fotoLink} />
+              <CardImg src={produto.fotoLink}></CardImg>
               <CardTitle>{produto.nome}</CardTitle>
               <CardText>R$ {produto.valor}</CardText>
-        </Link>
+              <Link to={/detalhes/${produto.id}}>detalhes</Link>
             </Card>
           );
         })}
