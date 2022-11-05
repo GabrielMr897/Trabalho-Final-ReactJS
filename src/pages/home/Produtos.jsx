@@ -8,6 +8,8 @@ import {
 } from "../../components/Cards/Card.jsx";
 import api from "../../service/api.js";
 
+import { Link } from "react-router-dom"
+
 export const Produtos = () => {
   const [produtos, setProduto] = useState([]);
   useEffect(() => {
@@ -29,7 +31,7 @@ export const Produtos = () => {
               <CardImg src={produto.fotoLink}></CardImg>
               <CardTitle>{produto.nome}</CardTitle>
               <CardText>R$ {produto.valor}</CardText>
-              <CardTitle></CardTitle>
+              <Link to={/detalhes/${produto.id}}>detalhes</Link>
             </Card>
           );
         })}
@@ -37,4 +39,3 @@ export const Produtos = () => {
     </>
   );
 };
-
