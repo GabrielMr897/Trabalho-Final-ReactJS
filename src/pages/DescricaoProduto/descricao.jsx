@@ -1,21 +1,30 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import  api  from "../../service/api.js";
+import { Header } from "../../components/header/Header.jsx"
+
 export const Descricao = () => {
-  const [product, setProduct] = useState([]);
+  const [produtos, setProdutos] = useState([]);
   const { id } = useParams();
 
-  const getProductById = () => {
-    const produto = api.find((desc) => desc.id == id);
-    setProduct(produto);
-  };
-  console.log(product);
+  useEffect(() => {
+    api
+      .get(`/produto/${id}`)
+      .then((response) => {
+        setProdutos(response.data)
+      })
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, [id]);
 
   return (
-    <div>
-      <h1>{product.nome}</h1>
-      <button onClick={() => getProductById()}>Olá</button>
-    </div>
+    <>
+      <Header/>
+      <h1>{produtos.nome}</h1>
+      <p>{produtos.descricao}</p>
+      <button>adcionar ao carrinho</button>
+    </>
   );
 };
 
