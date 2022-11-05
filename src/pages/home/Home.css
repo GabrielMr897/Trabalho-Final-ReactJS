@@ -5,3 +5,10 @@
 h1 {
   margin-top: 50px;
 }
+
+.carousel-control-prev-icon{
+  background-image: url(/src/assets/anterior.png);
+}
+.carousel-control-next-icon{
+  background-image: url(/src/assets/proximo.png);
+}
