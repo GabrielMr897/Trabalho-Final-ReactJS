@@ -24,6 +24,24 @@ export const Card = styled.div`
   height: 100%;
   border-radius: 13%;
   margin-top: 6px;
+
+  &:hover {
+    img {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    p {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      color: RGB(91, 172, 179);
+    }
+  }
   
   @media (min-width: 768px) {
     width: ${pxvwp(320, 768)};
@@ -39,13 +57,13 @@ export const Card = styled.div`
   `;
 
 export const CardTitle = styled.h3`
-  margin-top: ${pxvwp(10)};
+  margin-top: ${pxvwp(20)};
   color: #333;
   font-size: 2rem;
   text-align: center;
 
   @media (min-width: 1075px) {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
 `;
 
@@ -55,7 +73,7 @@ export const CardText = styled.p`
   font-size: 1.5rem;
 
   @media (min-width: 1075px) {
-    font-size: 1rem;
+    font-size: 2rem;
   }
 `;
 

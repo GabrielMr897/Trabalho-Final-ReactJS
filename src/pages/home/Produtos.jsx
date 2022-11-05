@@ -28,10 +28,12 @@ export const Produtos = () => {
         {produtos?.map((produto) => {
           return (
             <Card key={produto.id}>
+            <Link to={`/descricao/${produto.id}`}>
               <CardImg src={produto.fotoLink}></CardImg>
               <CardTitle>{produto.nome}</CardTitle>
               <CardText>R$ {produto.valor}</CardText>
-              <Link to={/detalhes/${produto.id}}>detalhes</Link>
+              
+              </Link>
             </Card>
           );
         })}
