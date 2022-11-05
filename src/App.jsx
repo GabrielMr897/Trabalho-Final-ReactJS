@@ -7,6 +7,9 @@ import { Home } from "./pages/home/Home.jsx";
 import { Contato } from "./pages/contato/Contato.jsx";
 import { Sobre } from "./pages/sobre/Sobre.jsx";
 import { Descricao } from "./pages/DescricaoProduto/descricao.jsx"
+import { Escritorio } from "./pages/escritorio/Escritorio.jsx"
+import { Livraria } from "./pages/livraria/Livraria.jsx"
+import { Informatica } from "./pages/informatica/Informatica.jsx";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/descricao/:id" element={<Descricao />} />
+          <Route path="/escritorio" element={<Escritorio />} />
+          <Route path="/livraria" element={<Livraria />} />
+          <Route path="/informatica" element={<Informatica />} />
         </Routes>
       </Router>
     </>
