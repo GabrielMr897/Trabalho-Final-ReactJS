@@ -6,6 +6,7 @@ import { Home } from "./pages/home/Home.jsx";
 
 import { Contato } from "./pages/contato/Contato.jsx";
 import { Sobre } from "./pages/sobre/Sobre.jsx";
+import { Descricao } from "./pages/DescricaoProduto/descricao.jsx"
 
 function App() {
   return (
@@ -15,10 +16,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contato" element={<Contato />} />
           <Route path="/sobre" element={<Sobre />} />
+          <Route path="/produto/:id" element={<Descricao />} />
         </Routes>
       </Router>
     </>
-  );
-}
-
-export default App;
+      );
+    }
+    
+    export default App;
+    
