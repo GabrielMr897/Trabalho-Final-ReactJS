@@ -13,7 +13,6 @@ import fotoro from "../../assets/ro.jpeg"
 export const Sobre = () => {
     return (
         <>
-            <Header />
             <h1>PAGINA QUEM SOMOS</h1>
             <div className="bg-light py-5">
             <div className="py-5">
@@ -52,7 +51,6 @@ export const Sobre = () => {
             </div>
             </div>
             
-            <Footer />
         </>
     )
 }

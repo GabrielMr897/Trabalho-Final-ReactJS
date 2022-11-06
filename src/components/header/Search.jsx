@@ -1,12 +1,16 @@
 import React from "react";
 import Logo from "../../assets/bpng.png"
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { CartContext } from "../../context/Cart";
 
 export const Search = () => {
   window.addEventListener("scroll", function () {
     const search = document.querySelector(".search");
     search.classList.toggle("active", window.scrollY > 100);
   });
+
+  const {produtoCart} = useContext(CartContext)
 
   return (
     <>
@@ -31,9 +35,9 @@ export const Search = () => {
             <i className="fa fa-user icon-circle"></i>
             </Link>
             <div className="cart">
-              <Link>
+              <Link to="/carrinho">
                 <i className="fa-solid fa-cart-shopping icon-circle"></i>
-                <span>0</span>
+                <span>{produtoCart.length}</span>
               </Link>
             </div>
           </div>

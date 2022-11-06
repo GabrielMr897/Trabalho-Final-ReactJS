@@ -9,8 +9,19 @@ export const Carrinho = () => {
         addItemCart,
         removeItemCart,
         removeItem,
-        clearCart
+        clearCart,
+        produtoCart
     } = useContext(CartContext)
 
     let preco = 0;
+
+    return (
+        <>
+        {produtoCart?.map((prod) => {
+            return <h1>{prod.nome}</h1>
+        })
+        
+        }
+        </>
+    )
 }
