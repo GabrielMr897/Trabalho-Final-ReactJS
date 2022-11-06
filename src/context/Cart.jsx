@@ -37,7 +37,7 @@ export const CartProvider = ({ children }) => {
   }
 
   function removendoItem(id){
-    const itemObject = [...produtoCarrinho]
+    const itemObject = [...produtoCarrinho];
 
     const arrayFiltered = itemObject.filter((produto)=>produto.id !==id)
     setProdutoCarrinho(arrayFiltered)
