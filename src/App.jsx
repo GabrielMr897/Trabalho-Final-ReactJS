@@ -19,6 +19,7 @@ function App() {
           <Route path="/quemsomos" element={<Sobre />} />
           <Route path="/descricao/:id" element={<Descricao />} />
           <Route path="/categoria/:id/:nome" element={<Categoria/>}/>
+
         </Routes>
       </Router>
     </>
