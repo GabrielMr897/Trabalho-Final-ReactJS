@@ -40,14 +40,13 @@ export const Descricao = () => {
         <CardImg src={produtos.fotoLink}></CardImg>
         <CardDesc>{produtos.descricao}</CardDesc>
        <CardText>R$ {produtos.valor}</CardText>
-      {/* <Link to={`/${produtos.id}`}> */}
         <button onClick={()=>addItemCart(
           produtos.id,
           produtos.fotoLink,
           produtos.nome,
           produtos.valor
         )}>adcionar ao carrinho</button>
-        {/* </Link> */}
+     
         </Fixo>
      
         </Container>

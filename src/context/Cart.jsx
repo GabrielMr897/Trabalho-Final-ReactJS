@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const CartContext = createContext({});
 
 export const CartProvider = ({ children }) => {
-  const [produtoCart, setProdutoCart] = useState();
+  const [produtoCart, setProdutoCart] = useState([]);
 
   function addItemCart(id, fotolink, nome, valor) {
     const itemObject = [...produtoCart];
@@ -20,7 +20,9 @@ export const CartProvider = ({ children }) => {
       item.quantidade = item.quantidade + 1;
     }
     setProdutoCart(itemObject);
+    
   }
+  console.log(produtoCart)
 
   function removeItemCart(id) {
     const itemObject = [...produtoCart];
