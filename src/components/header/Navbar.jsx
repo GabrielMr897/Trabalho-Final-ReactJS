@@ -16,7 +16,6 @@ export const Navbar = () => {
         api
           .get(`/categoria/`)
           .then((response) => {
-            console.log(response.data)
             setCategoria(response.data)
           })
           .catch((err) => {
