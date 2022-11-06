@@ -4,10 +4,10 @@ import { pxvwp } from "../../uteis/pxvwp.js";
 export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  flex-direction: center;
   width: 80%;
   margin: auto;
   justify-content: center;
+  
   `;
 
 export const Card = styled.div`
@@ -67,6 +67,8 @@ export const Card = styled.div`
  height: 100%;
  border-radius: 13%;
  margin-top: 10px; 
+ align-items:center;
+ justify-content: center;
   
   @media (min-width: 768px) {
     width: ${pxvwp(320, 768)};
