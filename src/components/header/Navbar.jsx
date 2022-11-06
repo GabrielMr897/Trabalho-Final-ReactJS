@@ -41,7 +41,7 @@ export const Navbar = () => {
                         {categoria?.map((cat) => {
                           return(  
                             <li key={cat.id}>
-                                <Link to={`/categoria/${cat.nome}`}>
+                                <Link to={`/categoria/${cat.id}/${cat.nome.toLowerCase()}`}>
                                     {cat.nome}    
                                 </Link>    
                             </li>
