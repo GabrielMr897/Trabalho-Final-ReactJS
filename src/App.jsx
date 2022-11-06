@@ -8,6 +8,7 @@ import { Contato } from "./pages/contato/Contato.jsx";
 import { Sobre } from "./pages/sobre/Sobre.jsx";
 import { Descricao } from "./pages/DescricaoProduto/descricao.jsx"
 import { Categoria } from "./pages/categoria/Categoria.jsx"
+import { CadastroForm } from "./pages/cadastro/Cadastro.jsx";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/quemsomos" element={<Sobre />} />
           <Route path="/descricao/:id" element={<Descricao />} />
-          <Route path="/categoria/:id" element={<Categoria/>}/>
+          <Route path="/categoria/:id/:nome" element={<Categoria/>}/>
+          <Route path="/cadastro" element={<CadastroForm/>}/>
         </Routes>
       </Router>
     </>
@@ -26,4 +28,3 @@ function App() {
     }
     
     export default App;
-    

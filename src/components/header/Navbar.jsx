@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom"
 
 import { useState, useEffect } from "react";
@@ -31,16 +30,25 @@ export const Navbar = () => {
             <div className="container d_c_flex">
                 <div className="navlink">
                     <ul className={MobileMenu ? "nav-links-mobile" : "link f_flex capitalize"} onClick={() => setMobileMenu(false)}>
+
+                        <li>
+                            <Link to="/">
+                                    INÍCIO
+                            </Link>
+                            
+                        </li>
                         {categoria?.map((cat) => {
                           return(  
                             <li key={cat.id}>
-                                <Link to={`/categoria/${cat.id}`}>
+                                <Link to={`/categoria/${cat.id}/${cat.nome.toLowerCase()}`}>
                                     {cat.nome}    
                                 </Link>    
                             </li>
                             
                             )
                         })}
+
+                        
                         
                     </ul>
 

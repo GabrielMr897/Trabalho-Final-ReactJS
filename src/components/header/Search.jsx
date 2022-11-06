@@ -13,7 +13,10 @@ export const Search = () => {
       <section className="search">
         <div className="container c_flex">
           <div className="logo width">
+            <Link to="/">
+            
             <img src={Logo} alt="" />
+            </Link>
           </div>
 
           <div className="search-box f_flex">
@@ -23,7 +26,10 @@ export const Search = () => {
           </div>
 
           <div className="icon f_flex width">
+            <Link to="/cadastro">
+            
             <i className="fa fa-user icon-circle"></i>
+            </Link>
             <div className="cart">
               <Link>
                 <i className="fa-solid fa-cart-shopping icon-circle"></i>
