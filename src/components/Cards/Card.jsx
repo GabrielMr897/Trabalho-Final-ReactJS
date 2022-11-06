@@ -54,6 +54,32 @@ export const Card = styled.div`
     height: 100%;
   }
   `;
+ export const Fixo = styled.div`
+ display: flex;
+ width: ${pxvwp(320, 320)};
+ min-height: ${pxvwp(200, 320)};
+ flex-direction: column;
+ padding: ${pxvwp(32)};
+ margin: ${pxvwp(20)};
+ background-color: #f5f5f5;
+ box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+ transition: 0.5s;
+ height: 100%;
+ border-radius: 13%;
+ margin-top: 10px; 
+  
+  @media (min-width: 768px) {
+    width: ${pxvwp(320, 768)};
+    min-height: ${pxvwp(200, 768)};
+    height: 100%;
+  }
+
+  @media (min-width: 1075px) {
+    width: ${pxvwp(500)};
+    min-height: ${pxvwp(300)};
+    height: 100%;
+  }
+  `;
 
 export const CardTitle = styled.h3`
   margin-top: ${pxvwp(20)};
@@ -63,6 +89,17 @@ export const CardTitle = styled.h3`
 
   @media (min-width: 1075px) {
     font-size: 1.7rem;
+  }
+`;
+
+export const CardDesc = styled.h3`
+  margin-top: ${pxvwp(20)};
+  color: #333;
+  font-size: 0.7rem;
+  text-align: center;
+
+  @media (min-width: 1075px) {
+    font-size: 1.2rem;
   }
 `;
 
