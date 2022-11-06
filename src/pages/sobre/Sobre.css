@@ -1,0 +1,43 @@
+.img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+.small {
+  margin-top: auto;
+  font-size: 1rem;
+  color: #666;
+}
+
+.h5 {
+  margin-top: auto;
+  color: #333;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.pai {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.mini {
+  background-color: #ffff;
+  box-shadow: -1px 11px 24px -11px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px var(--background-sec-dark);
+  border-radius: 13%;
+  height: 20rem;
+  width: 13rem;
+}
