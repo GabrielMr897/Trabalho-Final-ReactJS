@@ -30,6 +30,13 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
+.d_flexwrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
 .c_flex {
   display: flex;
   justify-content: space-between;
@@ -267,4 +274,10 @@ button {
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 1048px) {
+  .d_flexwrap {
+    flex-wrap: wrap;
+  }
 }

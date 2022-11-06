@@ -1,15 +1,11 @@
 .itens-carrinho {
-  background: #f6f9fc;
   height: auto;
   padding: 50px 0;
-}
-
-.itens-carrinho .detalhes-carrinho {
-  width: 70%;
+  display: flex;
 }
 
 .itens-carrinho .total-carrinho {
-  width: 30%;
+  width: 30rem;
   margin-top: 30px;
   margin-left: 30px;
   height: 130px;

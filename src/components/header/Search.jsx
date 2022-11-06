@@ -14,8 +14,8 @@ export const Search = () => {
 
   return (
     <>
-      <section className="busca">
-        <div className="container c_flex">
+      <section className="busca container">
+       
           <div className="logo width">
             <Link to="/">
             
@@ -41,7 +41,6 @@ export const Search = () => {
               </Link>
             </div>
           </div>
-        </div>
       </section>
     </>
   );
