@@ -69,6 +69,7 @@ export const Card = styled.div`
  margin-top: 10px; 
  align-items:center;
  justify-content: center;
+
   
   @media (min-width: 768px) {
     width: ${pxvwp(320, 768)};
