@@ -1,5 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import {
+    Card,
+    CardImg,
+    CardText,
+    CardTitle,
+    Container,
+  } from "../../components/Cards/Card.jsx";
+  import { Link } from "react-router-dom"
+import { Header } from "../../components/header/Header.jsx";
+import { Footer } from "../../components/Footer/Footer.jsx";
 
 import api from "../../service/api.js"
 
@@ -40,11 +50,30 @@ export const Categoria = () => {
  
       
         
-       return produtos.map((prod) => {
+       return (
+        <>
+        <Header/>
+
+        <h1>{categoria.nome}</h1>
+        <Container>
+        {produtos.map((prod) => {
             if(categoria.id === prod.idCategoria) {
-                return <h1 key={prod.id}>{prod.nome}</h1>
+                return (
+                    <Card key={prod.id}>
+                    <Link to={`/descricao/${prod.id}`}>
+                      <CardImg src={prod.fotoLink}></CardImg>
+                      <CardTitle>{prod.nome}</CardTitle>
+                      <CardText>R$ {prod.valor}</CardText>
+                      </Link>
+                    </Card>
+                    )
             }
-        })
+        })}
+         </Container>
+
+        <Footer/>
+        </>
+        )
        
       
       
