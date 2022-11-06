@@ -6,18 +6,18 @@ import { CartContext } from "../../context/Cart"
 export const Carrinho = () => {
     
     const {
-        addItemCart,
-        removeItemCart,
-        removeItem,
-        clearCart,
-        produtoCart
+        adcionandoItem,
+        removendoItemCarrinho,
+        removendoItem,
+        limpandoCarrinho,
+        produtoCarrinho
     } = useContext(CartContext)
 
     let preco = 0;
 
     return (
         <>
-        {produtoCart?.map((prod) => {
+        {produtoCarrinho?.map((prod) => {
             return <h1>{prod.nome}</h1>
         })
         

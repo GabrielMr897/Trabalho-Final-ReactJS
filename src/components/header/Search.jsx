@@ -10,7 +10,7 @@ export const Search = () => {
     search.classList.toggle("active", window.scrollY > 100);
   });
 
-  const {produtoCart} = useContext(CartContext)
+  const {produtoCarrinho} = useContext(CartContext)
 
   return (
     <>
@@ -37,7 +37,7 @@ export const Search = () => {
             <div className="cart">
               <Link to="/carrinho">
                 <i className="fa-solid fa-cart-shopping icon-circle"></i>
-                <span>{produtoCart.length}</span>
+                <span>{produtoCarrinho.length}</span>
               </Link>
             </div>
           </div>
