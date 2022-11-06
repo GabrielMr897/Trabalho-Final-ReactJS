@@ -19,7 +19,7 @@ export const Carrinho = () => {
     return (
         <>
       <section className='itens-carrinho'>
-        <div className='container d_flex'>
+        <div className='container d_flexwrap'>
 
           <div className='detalhes-carrinho'>
             {produtoCarrinho.length === 0 && <h1 className='no-items product'>não há itens no carrinho</h1>}

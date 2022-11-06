@@ -1,5 +1,8 @@
 .busca {
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .busca .logo img {
   width: 80px;
@@ -121,6 +124,14 @@ header ul li a:hover {
   header .link {
     display: none;
   }
+  .busca-box {
+    display: none;
+  }
+
+  .busca {
+    justify-content: space-around;
+  }
+
   .close,
   .open {
     position: absolute;
