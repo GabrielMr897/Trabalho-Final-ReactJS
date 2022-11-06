@@ -70,7 +70,7 @@ export const Footer = () => {
 
                 <div className="text-center p-4">
                     © 2022 Copyright:
-                    <a className="text-reset fw-bold" href="https://www.apache.org/licenses/LICENSE-2.0.html">BalacoBaco.com</a>
+                    <a className="text-reset fw-bold" target="_blank" href="https://www.apache.org/licenses/LICENSE-2.0.html">BalacoBaco.com</a>
                 </div>
 
             </footer>
