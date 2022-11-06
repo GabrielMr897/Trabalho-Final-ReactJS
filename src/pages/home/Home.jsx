@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "./home.js";
 
 import { Header } from "../../components/header/Header.jsx";
+import { Footer } from "../../components/Footer/Footer.jsx"
 
 
 import  "./Home.css"
@@ -18,6 +19,7 @@ export const Home = () => {
       <Header/>
       <Slide/>
       <Produtos/>
+      <Footer/>
     
     </>
   );
