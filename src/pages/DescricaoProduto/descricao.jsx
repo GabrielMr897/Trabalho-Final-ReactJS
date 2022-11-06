@@ -13,12 +13,12 @@ import {
   CardDesc
 } from "../../components/Cards/Card.jsx";
 import { autoprefixer } from "fontawesome";
-import { Button } from "../../components/Button/botao.jsx"
+import { Botao } from "../../components/Botao/botao.js";
 
 export const Descricao = () => {
   const [produtos, setProdutos] = useState([]);
   const { id } = useParams();
-  const { addItemCart } = useContext(CartContext);
+  const { adcionandoItem } = useContext(CartContext);
 
   useEffect(() => {
     api
@@ -39,7 +39,7 @@ export const Descricao = () => {
         <CardImg src={produtos.fotoLink}></CardImg>
         <CardDesc>{produtos.descricao}</CardDesc>
        <CardText>R$ {produtos.valor}</CardText>
-        <Button onClick={()=>addItemCart(
+        <Botao onClick={()=>adcionandoItem(
 
           produtos.id,
           produtos.fotoLink,
@@ -53,7 +53,7 @@ export const Descricao = () => {
         height="2rem"
         colorText="#ffffff"
         borderradius="6px"
-        textalign="center">adcionar ao carrinho</Button>
+        textalign="center">adcionar ao carrinho</Botao>
      
 
         </Fixo>

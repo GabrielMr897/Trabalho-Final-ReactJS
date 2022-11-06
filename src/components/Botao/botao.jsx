@@ -1,6 +1,6 @@
 import { Botao } from "./botao.js"
 
-export const Button = (props) => {
+export const Botao = (props) => {
     return (
       <Botao
         fontSize={props.fontSize}
