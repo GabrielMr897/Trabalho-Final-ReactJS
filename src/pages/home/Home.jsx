@@ -16,10 +16,9 @@ import { Produtos } from "./Produtos.jsx"
 export const Home = () => {
   return (
     <>
-      <Header/>
+ 
       <Slide/>
       <Produtos/>
-      <Footer/>
     
     </>
   );

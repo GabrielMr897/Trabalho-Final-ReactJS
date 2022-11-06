@@ -1,7 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
-import  api  from "../../service/api.js";
-import { Header } from "../../components/header/Header.jsx"
+import  api  from "../../service/api.js"; 
 import { Footer } from "../../components/Footer/Footer.jsx";
 import { CartContext } from "../../context/Cart.jsx";
 import {
@@ -34,14 +33,13 @@ export const Descricao = () => {
 
   return (
     <>
-      <Header/>
         <CardTitle>{produtos.nome}</CardTitle>
       <Container>
       <Fixo key={produtos.id}>
         <CardImg src={produtos.fotoLink}></CardImg>
         <CardDesc>{produtos.descricao}</CardDesc>
        <CardText>R$ {produtos.valor}</CardText>
-        <button onClick={()=>addItemCart(
+        <Button onClick={()=>addItemCart(
 
           produtos.id,
           produtos.fotoLink,
@@ -55,13 +53,13 @@ export const Descricao = () => {
         height="2rem"
         colorText="#ffffff"
         borderradius="6px"
-        textalign="center">adcionar ao carrinho</button>
+        textalign="center">adcionar ao carrinho</Button>
      
 
         </Fixo>
      
         </Container>
-      <Footer/>
+   
     </>
   );
 };

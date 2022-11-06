@@ -6,7 +6,7 @@ import { Header } from "../../components/header/Header.jsx"
 export const CadastroForm = () => {
     return (
         <>
-<Header/>
+
 
 <form>
   <div className="form-row">
