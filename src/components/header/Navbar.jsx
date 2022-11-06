@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom"
 
 import { useState, useEffect } from "react";
@@ -41,7 +40,6 @@ export const Navbar = () => {
                         {categoria?.map((cat) => {
                           return(  
                             <li key={cat.id}>
-
                                 <Link to={`/categoria/${cat.id}/${cat.nome.toLowerCase()}`}>
                                     {cat.nome}    
                                 </Link>    
