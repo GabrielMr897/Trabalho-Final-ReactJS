@@ -18,7 +18,7 @@ function App() {
           <Route path="/contato" element={<Contato />} />
           <Route path="/quemsomos" element={<Sobre />} />
           <Route path="/descricao/:id" element={<Descricao />} />
-          <Route path="/categoria/:nome" element={<Categoria/>}/>
+          <Route path="/categoria/:id/:nome" element={<Categoria/>}/>
         </Routes>
       </Router>
     </>
@@ -26,4 +26,3 @@ function App() {
     }
     
     export default App;
-    
