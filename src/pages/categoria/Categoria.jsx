@@ -57,7 +57,7 @@ export const Categoria = () => {
         <h1>{categoria.nome}</h1>
         <Container>
         {produtos.map((prod) => {
-            if(categoria.id === prod.idCategoria) {
+            if(categoria.nome === prod.nomeCategoria) {
                 return (
                     <Card key={prod.id}>
                     <Link to={`/descricao/${prod.id}`}>
