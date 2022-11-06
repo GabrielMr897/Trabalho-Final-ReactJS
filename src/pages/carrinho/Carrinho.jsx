@@ -11,4 +11,6 @@ export const Carrinho = () => {
         removeItem,
         clearCart
     } = useContext(CartContext)
+
+    let preco = 0;
 }
