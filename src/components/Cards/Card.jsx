@@ -55,10 +55,9 @@ export const Card = styled.div`
   }
   `;
  export const Fixo = styled.div`
- display: flex;
- width: ${pxvwp(320, 320)};
+ display: grid;
+ grid-template-columns: 50% 50%;
  min-height: ${pxvwp(200, 320)};
- flex-direction: column;
  padding: ${pxvwp(32)};
  margin: ${pxvwp(20)};
  background-color: #f5f5f5;
@@ -66,9 +65,7 @@ export const Card = styled.div`
  transition: 0.5s;
  height: 100%;
  border-radius: 13%;
- margin-top: 10px; 
- align-items:center;
- justify-content: center;
+ margin-top: 10px;
 
   
   @media (min-width: 768px) {
