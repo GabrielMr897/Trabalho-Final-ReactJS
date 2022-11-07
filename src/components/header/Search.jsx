@@ -14,7 +14,7 @@ export const Search = () => {
 
   return (
     <>
-      <section className="busca container">
+      <section className="busca">
        
           <div className="logo width">
             <Link to="/">
