@@ -1,16 +1,16 @@
 .busca {
-  padding: 20px 0;
+  padding: 20px 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
 }
 .busca .logo img {
   width: 80px;
   height: 80px;
 }
-.busca .width {
-  width: 20%;
-}
+
 .busca-box {
   width: 80%;
   border: 2px solid rgba(0, 0, 0, 0.1);
