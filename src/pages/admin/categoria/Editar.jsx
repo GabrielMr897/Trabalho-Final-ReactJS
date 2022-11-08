@@ -61,11 +61,11 @@ export const EditarCategoria = () => {
             })}
           </select>
 
-    <div class="row">
-        <div class="col">
+    <div class="forms">
+        <div class="inps">
                 <input type="text" class="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
         </div>
-        <div class="col">
+        <div class="inps">
                 <input type="text" class="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
         </div>
     </div>
