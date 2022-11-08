@@ -13,37 +13,37 @@ import fotoro from "../../assets/ro.jpeg"
 export const Sobre = () => {
     return (
         <>
-            <h1>PAGINA QUEM SOMOS</h1>
+            <h1>Fundadores</h1>
             <div className="bg-light py-5">
             <div className="py-5">
                 <div className="pai">
                         <div class="mini">
-                            <img src={fotoJo} alt="Jonathan" className="img" />
+                            <img src={fotoJo} alt="Jonathan" className="img2" />
                             <div className="h5">Jonathan Marques</div>
                             <span className="small"> Bla bla bla, eu sou Jonathan.</span>
                         </div>
                         <div class="mini">
-                            <img src={fotogab} alt="Gabriel" className="img" />
+                            <img src={fotogab} alt="Gabriel" className="img2" />
                             <div className="h5">Gabriel Martins</div>
                             <span className="small">aaaaaaaaaa</span>
                         </div>
                         <div class="mini">
-                            <img src={fotokauan} alt="Kauan" className="img" />
+                            <img src={fotokauan} alt="Kauan" className="img2" />
                             <div className="h5">Kauan Oliveira</div>
                             <span className="small">aaaaaaaaaaaaaaaaaaa</span>
                         </div>
                         <div class="mini">
-                            <img src={fotopri} alt="Priscila" className="img"  />
+                            <img src={fotopri} alt="Priscila" className="img2"  />
                             <h5>Priscila Durão</h5>
                             <span className="small">aaaaaaaaaaaaaa</span>
                         </div>
                         <div class="mini">
-                            <img src= {fotoma} alt="Maria" className="img" />
+                            <img src= {fotoma} alt="Maria" className="img2" />
                             <div className="h5">Maria Eduarda</div>
                             <span className="small">aaaaaaaaaaaa</span>
                         </div>
                         <div class="mini">
-                            <img src={fotoro} alt="Roberto" className="img"  />
+                            <img src={fotoro} alt="Roberto" className="img2"  />
                             <div className="h5">Roberto de Andrade</div>
                             <span className="small">aaaaaaaaaaaa</span>
                         </div>
