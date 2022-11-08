@@ -15,42 +15,42 @@ export const Sobre = () => {
         <>
             <h1>Fundadores</h1>
             <div className="bg-light py-5">
-            <div className="py-5">
-                <div className="pai">
+                <div className="py-5">
+                    <div className="pai">
                         <div class="mini">
                             <img src={fotoJo} alt="Jonathan" className="img2" />
                             <div className="h5">Jonathan Marques</div>
-                            <span className="small"> Bla bla bla, eu sou Jonathan.</span>
+                            <a className="small" href="https://github.com/JotaMarquesb" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
                             <img src={fotogab} alt="Gabriel" className="img2" />
                             <div className="h5">Gabriel Martins</div>
-                            <span className="small">aaaaaaaaaa</span>
+                            <a className="small" href="https://github.com/GabrielMr897" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
                             <img src={fotokauan} alt="Kauan" className="img2" />
                             <div className="h5">Kauan Oliveira</div>
-                            <span className="small">aaaaaaaaaaaaaaaaaaa</span>
+                            <a className="small" href="https://github.com/KauanOliveira1" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
-                            <img src={fotopri} alt="Priscila" className="img2"  />
+                            <img src={fotopri} alt="Priscila" className="img2" />
                             <h5>Priscila Durão</h5>
-                            <span className="small">aaaaaaaaaaaaaa</span>
+                            <a className="small" href="https://github.com/Prisciladurao" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
-                            <img src= {fotoma} alt="Maria" className="img2" />
+                            <img src={fotoma} alt="Maria" className="img2" />
                             <div className="h5">Maria Eduarda</div>
-                            <span className="small">aaaaaaaaaaaa</span>
+                            <a className="small" href="https://github.com/mahlynn" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
-                            <img src={fotoro} alt="Roberto" className="img2"  />
+                            <img src={fotoro} alt="Roberto" className="img2" />
                             <div className="h5">Roberto de Andrade</div>
-                            <span className="small">aaaaaaaaaaaa</span>
+                            <a className="small" href="https://github.com/RobertoDeAndrade" target="_blank">GITHUB</a>
                         </div>
+                    </div>
                 </div>
             </div>
-            </div>
-            
+
         </>
     )
 }
