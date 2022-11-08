@@ -53,42 +53,42 @@ export const AdicionarCliente = () => {
 
       return (
         <form onSubmit={(e) => cadastrar(e)}>
-    <div class="forms">
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
+    <div className="forms">
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Usuario"  onChange={(e) => setUsuario(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Usuario"  onChange={(e) => setUsuario(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Cpf"  onChange={(e) => setCpf(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Cpf"  onChange={(e) => setCpf(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Email"  onChange={(e) => setEmail(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Email"  onChange={(e) => setEmail(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Data de nascimento"  onChange={(e) => setDataNascimento(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Data de nascimento"  onChange={(e) => setDataNascimento(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Bairro"  onChange={(e) => setBairro(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Bairro"  onChange={(e) => setBairro(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Rua"  onChange={(e) => setRua(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Rua"  onChange={(e) => setRua(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Estado"  onChange={(e) => setEstado(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Estado"  onChange={(e) => setEstado(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Complemento"  onChange={(e) => setComplemento(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Complemento"  onChange={(e) => setComplemento(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Numero"  onChange={(e) => setNumero(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Numero"  onChange={(e) => setNumero(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Cep"  onChange={(e) => setCep(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Cep"  onChange={(e) => setCep(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Cidade"  onChange={(e) => setCidade(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Cidade"  onChange={(e) => setCidade(e.target.value)}/>
         </div>
     </div>
     <Button type="submit">Cadastrar Categoria</Button>

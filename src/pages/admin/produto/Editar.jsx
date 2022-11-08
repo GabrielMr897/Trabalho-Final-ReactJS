@@ -93,17 +93,17 @@ export const EditarProduto = () => {
             })}
           </select>
 
-      <div class="forms">
-            <div class="inps">
-                <input type="text" class="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
+      <div className="forms">
+            <div className="inps">
+                <input type="text" className="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
             </div>
-            <div class="inps">
-                <input type="text" class="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
+            <div className="inps">
+                <input type="text" className="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
             </div>
-            <div class="inps">
-                <input type="number" min="1" class="form-control" placeholder="Quantidade Estoque"  onChange={(e) => setQtdEstoque(e.target.value)}/>
+            <div className="inps">
+                <input type="number" min="1" className="form-control" placeholder="Quantidade Estoque"  onChange={(e) => setQtdEstoque(e.target.value)}/>
             </div>
-            <div class="inps">
+            <div className="inps">
                 <input type="number" min="1" class="form-control" placeholder="Valor"  onChange={(e) => setValor(e.target.value)}/>
             </div>
           
