@@ -29,13 +29,13 @@ export const Footer = () => {
                                     Produtos
                                 </h6>
                                 <p>
-                                    <Link href="#!" className="text-reset">Escritório</Link>
+                                    <Link to="/categoria/2/escritorio" className="text-reset">Escritório</Link>
                                 </p>
                                 <p>
-                                    <Link href="#!" className="text-reset">Informática</Link>
+                                    <Link to="/categoria/1/informatica" className="text-reset">Informática</Link>
                                 </p>
                                 <p>
-                                    <Link href="#!" className="text-reset">Livraria</Link>
+                                    <Link to="/categoria/3/livraria" className="text-reset">Livraria</Link>
                                 </p>
                             </div>
 
@@ -51,7 +51,7 @@ export const Footer = () => {
                                     <Link to="/" className="text-reset">Página inicial</Link>
                                 </p>
                                 <p>
-                                    <Link href="#!" className="text-reset">Produtos</Link>
+                                    <Link to="/TodosProdutos" className="text-reset">Produtos</Link>
                                 </p>
                             </div>
 

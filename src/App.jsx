@@ -22,6 +22,8 @@ import { RemoverCliente } from "./pages/admin/cliente/Remover.jsx"
 import { AdicionarFuncionario } from "./pages/admin/funcionario/Adicionar.jsx"
 import { EditarFuncionario } from "./pages/admin/funcionario/Editar.jsx"
 import { RemoverFuncionario } from "./pages/admin/funcionario/Remover.jsx"
+import { TodosProdutos } from "./pages/todosProdutos/todosProdutos.jsx"
+
 
 
 function App() {
@@ -48,6 +50,7 @@ function App() {
           <Route path="/Admin/cliente/editar"  element={<EditarCliente/>}/>
           <Route path="/Admin/produto/deletar" element={<RemoverProduto/>}/>
           <Route path="/Admin/produto/editar" element={<EditarProduto/>}/>
+          <Route path="/todosProdutos/" element={<TodosProdutos/>}/>
         </Routes>
       <Footer/>
       </Router>
