@@ -9,7 +9,7 @@ import "./produto.css"
 export const RemoverProduto = () => {
     const [produtos, setProdutos] = useState([]);
     const [id, setId] = useState();
-
+    const [resposta, setResposta] = useState()
     useEffect(() => {
         api
           .get(`/produto`)
@@ -22,6 +22,7 @@ export const RemoverProduto = () => {
       }, []);
 
 
+
       const deletarFuncionario = (e) => {
         e.preventDefault();
         api
@@ -31,9 +32,15 @@ export const RemoverProduto = () => {
             })
             .catch((err) => {
               console.error("ops! ocorreu um erro" + err);
-            });
+            }).finally((() => {
+              recarregar()
+            }));
       }
     
+
+      const recarregar = () => {
+        window.location.reload();
+    }
 
 
     return (

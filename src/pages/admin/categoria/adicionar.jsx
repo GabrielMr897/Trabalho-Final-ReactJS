@@ -34,12 +34,12 @@ export const AdicionarCategoria = () => {
       };
       return (
         <form onSubmit={(e) => cadastrar(e)}>
-    <div class="forms">
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
+    <div className="forms">
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
         </div>
-        <div class="inps">
-                <input type="text" class="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
+        <div className="inps">
+                <input type="text" className="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
         </div>
     </div>
     <Button type="submit">Cadastrar Categoria</Button>

@@ -17,9 +17,6 @@ import { EditarCategoria } from "./pages/admin/categoria/Editar.jsx"
 import { RemoverCategoria } from "./pages/admin/categoria/Remover.jsx"
 import { EditarProduto } from "./pages/admin/produto/Editar.jsx"
 import { RemoverProduto } from "./pages/admin/produto/Remover.jsx"
-import { AdicionarPedido } from "./pages/admin/pedido/Adicionar.jsx"
-import { EditarPedido } from "./pages/admin/pedido/Editar.jsx"
-import { RemoverPedido } from "./pages/admin/pedido/Remover.jsx"
 import { EditarCliente } from "./pages/admin/cliente/Editar.jsx"
 import { RemoverCliente } from "./pages/admin/cliente/Remover.jsx"
 import { AdicionarFuncionario } from "./pages/admin/funcionario/Adicionar.jsx"
@@ -51,9 +48,6 @@ function App() {
           <Route path="/Admin/cliente/editar"  element={<EditarCliente/>}/>
           <Route path="/Admin/produto/deletar" element={<RemoverProduto/>}/>
           <Route path="/Admin/produto/editar" element={<EditarProduto/>}/>
-          <Route path="/Admin/pedido/adicionar" element={<AdicionarPedido/>}/>
-          <Route path="/Admin/pedido/deletar" element={<RemoverPedido/>}/>
-          <Route path="/Admin/pedido/editar" element={<EditarPedido/>}/>
         </Routes>
       <Footer/>
       </Router>
