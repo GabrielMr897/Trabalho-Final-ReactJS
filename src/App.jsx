@@ -11,6 +11,7 @@ import { Descricao } from "./pages/DescricaoProduto/descricao.jsx"
 import { Categoria } from "./pages/categoria/Categoria.jsx"
 import { CadastroForm } from "./pages/cadastro/Cadastro.jsx";
 import { Carrinho } from "./pages/carrinho/Carrinho";
+import { PainelAdmin } from "./pages/admin/Painel";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
           <Route path="/categoria/:id/:nome" element={<Categoria/>}/>
           <Route path="/cadastro" element={<CadastroForm/>}/>
           <Route path="/carrinho" element={<Carrinho/>}/>
+          <Route path="/Admin" element={<PainelAdmin/>}></Route>
+          <Route path="/Admin/categoria"></Route>
         </Routes>
       <Footer/>
       </Router>
