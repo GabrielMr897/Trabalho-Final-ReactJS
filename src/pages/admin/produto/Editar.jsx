@@ -67,7 +67,7 @@ export const EditarProduto = () => {
             
           })
           .then((response) => {
-            console.log(response)
+           
             setResposta(response);
           })
           .catch((err) => {

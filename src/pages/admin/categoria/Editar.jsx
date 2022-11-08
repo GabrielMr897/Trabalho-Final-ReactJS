@@ -71,6 +71,8 @@ export const EditarCategoria = () => {
     </div>
         <Button type="submit">Atualizar categorias</Button>
       </form>
+
+      
       </>
     );
 }

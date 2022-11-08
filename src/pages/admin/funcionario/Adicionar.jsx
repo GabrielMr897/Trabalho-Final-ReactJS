@@ -7,7 +7,7 @@ import api from "../../../service/api.js"
 export const AdicionarFuncionario = () => {
         const [nome, setNome] = useState("")
         const [cpf, setCpf] = useState("")
-        const[reposta, setResposta] = useState()
+        const[resposta, setResposta] = useState()
 
 
     const cadastrar = (e) => {
@@ -27,7 +27,11 @@ export const AdicionarFuncionario = () => {
           });
         }
 
-   return( <form onSubmit={(e) => cadastrar(e)}>
+   return( 
+
+    <>
+   
+   <form onSubmit={(e) => cadastrar(e)}>
     <div className="forms">
         <div className="inps">
                 <input type="text" className="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
@@ -38,5 +42,23 @@ export const AdicionarFuncionario = () => {
     </div>
     <Button type="submit">Cadastrar Funcionário</Button>
         </form>
+        {(() => {
+                
+                if (resposta?.status === 201) {
+                  return (
+                    <>
+                      <div
+                        className="alert alert-primary mt-2 mb-2 "
+                        role="alert"
+                      >
+                        Novo Funcionario Cadastrado
+                      </div>
+                    </>
+                  );
+                }
+              })()}
+
+</>
+        
    )
 }

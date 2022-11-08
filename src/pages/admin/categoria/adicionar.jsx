@@ -33,6 +33,7 @@ export const AdicionarCategoria = () => {
       
       };
       return (
+        <>
         <form onSubmit={(e) => cadastrar(e)}>
     <div className="forms">
         <div className="inps">
@@ -44,6 +45,25 @@ export const AdicionarCategoria = () => {
     </div>
     <Button type="submit">Cadastrar Categoria</Button>
         </form>
+
+        
+        {(() => {
+                
+                if (resposta?.status === 201) {
+                  return (
+                    <>
+                      <div
+                        className="alert alert-primary mt-2 mb-2 "
+                        role="alert"
+                      >
+                        Nova Categoria Cadastrado
+                      </div>
+                    </>
+                  );
+                }
+              })()}
+
+        </>
       )
     
 }

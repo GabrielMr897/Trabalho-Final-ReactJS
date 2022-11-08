@@ -128,6 +128,23 @@ export const EditarCliente = () => {
     </div>
         <Button type="submit">Atualizar Cliente</Button>
       </form>
+
+      
+      {(() => {
+                
+                if (resposta?.status === 201) {
+                  return (
+                    <>
+                      <div
+                        className="alert alert-primary mt-2 mb-2 "
+                        role="alert"
+                      >
+                        Novo Cliente Editado
+                      </div>
+                    </>
+                  );
+                }
+              })()}
       </>
     );
 }
