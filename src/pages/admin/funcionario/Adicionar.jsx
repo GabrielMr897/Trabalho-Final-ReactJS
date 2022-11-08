@@ -7,6 +7,7 @@ import api from "../../../service/api.js"
 export const AdicionarFuncionario = () => {
         const [nome, setNome] = useState("")
         const [cpf, setCpf] = useState("")
+        const[reposta, setResposta] = useState()
 
 
     const cadastrar = (e) => {

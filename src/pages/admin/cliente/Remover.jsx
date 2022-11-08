@@ -23,14 +23,32 @@ export const RemoverCliente = () => {
             console.error("ops! ocorreu um erro" + err);
           });
       }, []);
+
+
+      const deletarCliente = (e) => {
+        e.preventDefault();
+        api
+            .delete(`/cliente/${id}`)
+            .then((response) => {
+              setResposta(response.status);
+            })
+            .catch((err) => {
+              console.error("ops! ocorreu um erro" + err);
+            }).finally(() => {
+              recarregar()
+            });
+      }
     
+      const recarregar = () => {
+        window.location.reload();
+    }
 
 
     return (
         
         <>
         <h1>ESCOLHA UM DOS NOMES</h1>
-        <form onSubmit={(e) => editar(e)}>
+        <form onSubmit={(e) => deletarCliente(e)}>
      
      <select className="form-control form-control-lg" as="select" value={id} onChange={(e) => setId(e.target.value)}>
             {clientes.map((cliente) => {

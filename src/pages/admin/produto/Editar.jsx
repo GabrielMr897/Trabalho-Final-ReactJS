@@ -14,6 +14,7 @@ export const EditarProduto = () => {
     const [produtoU, setProdutoU] = useState([]);
     const [id, setId] = useState();
     const [nome, setNome] = useState("")
+    const [resposta, setResposta] = useState()
     const [descricao, setDescricao] = useState("")
     const [qtdEstoque, setQtdEstoque] = useState(0)
     const [valor, setValor] = useState(0)

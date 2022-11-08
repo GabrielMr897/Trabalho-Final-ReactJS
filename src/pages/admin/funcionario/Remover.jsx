@@ -32,8 +32,14 @@ export const RemoverFuncionario = () => {
             })
             .catch((err) => {
               console.error("ops! ocorreu um erro" + err);
+            }).finally(() => {
+              recarregar()
             });
       }
+
+      const recarregar = () => {
+        window.location.reload();
+    }
 
     return (
         

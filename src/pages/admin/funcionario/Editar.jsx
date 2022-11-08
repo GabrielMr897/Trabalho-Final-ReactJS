@@ -14,6 +14,7 @@ export const EditarFuncionario = () => {
     const [funcionarios, setFuncionarios] = useState([]);
     const [id, setId] = useState();
     const [nome, setNome] = useState("")
+    const[resposta, setResposta] = useState()
 
     useEffect(() => {
         api
