@@ -14,17 +14,12 @@ export const PainelAdmin = () => {
 
                 <ul>
                     <li>
-                    <Link to="/Admin/cliente/adicionar">
-                        Adcionar
-                    </Link>
-                    </li>
-                    <li>
                     <Link to="/Admin/cliente/editar">
                         Editar
                     </Link>
                     </li>
                     <li>
-                    <Link to="/Admin/cliente/remover">
+                    <Link to="/Admin/cliente/deletar">
                         Remover
                     </Link>
                     </li>
@@ -45,7 +40,7 @@ export const PainelAdmin = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link to="/Admin/funcionario/remover">
+                    <Link to="/Admin/funcionario/deletar">
                         Remover
                     </Link>
                     </li>
@@ -67,7 +62,7 @@ export const PainelAdmin = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link to="/Admin/produto/remover">
+                    <Link to="/Admin/produto/deletar">
                         Remover
                     </Link>
                     </li>
@@ -90,7 +85,7 @@ export const PainelAdmin = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link to="/Admin/categoria/remover">
+                    <Link to="/Admin/categoria/deletar">
                         Remover
                     </Link>
                     </li>
@@ -112,7 +107,7 @@ export const PainelAdmin = () => {
                     </Link>
                     </li>
                     <li>
-                    <Link to="/Admin/pedido/remover">
+                    <Link to="/Admin/pedido/deletar">
                         Remover
                     </Link>
                     </li>
