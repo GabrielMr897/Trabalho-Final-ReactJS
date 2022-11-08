@@ -64,19 +64,18 @@ export const Card = styled.div`
  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
  transition: 0.5s;
  height: 100%;
- border-radius: 13%;
- margin-top: 10px;
-
-  
+ border-radius: 10%;
+ margin-top: 1rem;
+   
   @media (min-width: 768px) {
-    width: ${pxvwp(320, 768)};
+    width: ${pxvwp(900, 1200)};
     min-height: ${pxvwp(200, 768)};
     height: 100%;
   }
 
   @media (min-width: 1075px) {
-    width: ${pxvwp(500)};
-    min-height: ${pxvwp(300)};
+    width: ${pxvwp(900)};
+    min-height: ${pxvwp(350)};
     height: 100%;
   }
   `;
@@ -120,4 +119,3 @@ export const CardImg = styled.img`
   width: 250px;
   border-radius: 8%;
  `;
-
