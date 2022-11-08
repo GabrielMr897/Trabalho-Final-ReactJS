@@ -25,7 +25,8 @@ export const RemoverCategoria = () => {
         });
     }, []);
 
-    const deletarCategoria = (id) => {
+    const deletarCategoria = (e) => {
+      e.preventDefault();
       api
           .delete(`/categoria/${id}`)
           .then((response) => {
@@ -44,7 +45,7 @@ export const RemoverCategoria = () => {
         
         <>
         <h1>ESCOLHA UM DOS NOMES</h1>
-        <form onSubmit={() => deletarCategoria(id)}>
+        <form onSubmit={(e) => deletarCategoria(e)}>
      
         <select className="form-control form-control-lg" as="select" value={id} onChange={(e) => setId(e.target.value)}>
             {categorias.map((categoria) => {
