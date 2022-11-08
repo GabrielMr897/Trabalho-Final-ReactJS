@@ -37,10 +37,11 @@ export const Descricao = () => {
   return (
     <>
       <Container>
-        <div className="tit">{produtos.nome}</div>
+        
         <Fixo key={produtos.id}>
           <CardImg src={produtos.fotoLink}></CardImg>
           <div className="direita">
+          <div className="tit">{produtos.nome}</div>
             <CardDesc>{produtos.descricao}</CardDesc>
             <CardText>R$ {produtos.valor}</CardText>
             <Botao
