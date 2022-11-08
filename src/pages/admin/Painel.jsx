@@ -52,11 +52,6 @@ export const PainelAdmin = () => {
                 <p>Gerenciando produto</p>
                 <ul>
                     <li>
-                    <Link to="/Admin/produto/adicionar">
-                        Adicionar
-                    </Link>
-                    </li>
-                    <li>
                     <Link to="/Admin/produto/editar">
                         Editar
                     </Link>
@@ -86,28 +81,6 @@ export const PainelAdmin = () => {
                     </li>
                     <li>
                     <Link to="/Admin/categoria/deletar">
-                        Remover
-                    </Link>
-                    </li>
-                </ul>
-            </div>
-            <div className="boxPainel">
-                <h3>PEDIDO</h3>
-                <p>Gerenciando Pedido</p>
-
-                <ul>
-                    <li>
-                    <Link to="/Admin/pedido/adicionar">
-                        Adicionar
-                    </Link>
-                    </li>
-                    <li>
-                    <Link to="/Admin/pedido/editar">
-                        Editar
-                    </Link>
-                    </li>
-                    <li>
-                    <Link to="/Admin/pedido/deletar">
                         Remover
                     </Link>
                     </li>

@@ -7,3 +7,9 @@ form {
   max-width: 30%;
   gap: 2rem;
 }
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
