@@ -47,6 +47,11 @@ export const Navbar = () => {
                             )
                         })}
 
+                        <li>
+                            <Link to="/Admin">
+                                    PAINEL ADMIN
+                            </Link>
+                        </li>
                         
                         
                     </ul>
