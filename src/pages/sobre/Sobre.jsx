@@ -1,4 +1,4 @@
-'import React from 'react';
+import React from 'react';
 import { Footer } from '../../components/Footer/Footer.jsx';
 import { Header } from "../../components/header/Header.jsx"
 import "./Sobre.css"

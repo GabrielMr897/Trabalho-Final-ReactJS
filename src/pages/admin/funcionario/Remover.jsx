@@ -10,6 +10,7 @@ import "./funcionario.css"
 export const RemoverFuncionario = () => {
     const [funcionarios, setFuncionarios] = useState([]);
     const [id, setId] = useState();
+    const [resposta, setResposta] = useState()
 
     useEffect(() => {
         api
@@ -21,14 +22,23 @@ export const RemoverFuncionario = () => {
             console.error("ops! ocorreu um erro" + err);
           });
       }, []);
-    
 
+      const deletarFuncionario = (id) => {
+        api
+            .delete(`/funcionario/${id}`)
+            .then((response) => {
+              setResposta(response.status);
+            })
+            .catch((err) => {
+              console.error("ops! ocorreu um erro" + err);
+            });
+      }
 
     return (
         
         <>
         <h1>ESCOLHA UM DOS NOMES</h1>
-        <form onSubmit={(e) => editar(e)}>
+        <form onSubmit={() => deletarFuncionario(id)}>
      
         <select className="form-control form-control-lg" as="select" value={id} onChange={(e) => setId(e.target.value)}>
             {funcionarios.map((funcionario) => {

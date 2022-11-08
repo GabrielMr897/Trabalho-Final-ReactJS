@@ -31,7 +31,7 @@ export const PainelAdmin = () => {
                 <ul>
                     <li>
                     <Link to="/Admin/funcionario/adicionar">
-                        Adcionar
+                        Adicionar
                     </Link>
                     </li>
                     <li>
@@ -53,7 +53,7 @@ export const PainelAdmin = () => {
                 <ul>
                     <li>
                     <Link to="/Admin/produto/adicionar">
-                        Adcionar
+                        Adicionar
                     </Link>
                     </li>
                     <li>
@@ -76,7 +76,7 @@ export const PainelAdmin = () => {
                 <ul>
                     <li>
                     <Link to="/Admin/categoria/adicionar">
-                        Adcionar
+                        Adicionar
                     </Link>
                     </li>
                     <li>
@@ -97,8 +97,8 @@ export const PainelAdmin = () => {
 
                 <ul>
                     <li>
-                    <Link to="/Admin/pedido/adcionar">
-                        Adcionar
+                    <Link to="/Admin/pedido/adicionar">
+                        Adicionar
                     </Link>
                     </li>
                     <li>

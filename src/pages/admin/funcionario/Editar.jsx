@@ -13,6 +13,7 @@ export const EditarFuncionario = () => {
 
     const [funcionarios, setFuncionarios] = useState([]);
     const [id, setId] = useState();
+    const [nome, setNome] = useState("")
 
     useEffect(() => {
         api
@@ -24,6 +25,21 @@ export const EditarFuncionario = () => {
             console.error("ops! ocorreu um erro" + err);
           });
       }, []);
+
+      const editar = (e) => {
+    
+        api
+          .put(`/funcionario/${id}`, {
+            nome: nome
+            
+          })
+          .then((response) => {
+            setResposta(response);
+          })
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+        }
     
 
 
@@ -42,6 +58,14 @@ export const EditarFuncionario = () => {
               );
             })}
           </select>
+
+
+          
+    <div class="row">
+        <div class="col">
+                <input type="text" class="form-control" placeholder="Nome"  onChange={(e) => setNome(e.target.value)}/>
+        </div>
+    </div>
         <Button type="submit">Atualizar Funcionario</Button>
       </form>
       </>

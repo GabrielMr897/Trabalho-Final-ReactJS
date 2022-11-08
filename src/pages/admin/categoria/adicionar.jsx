@@ -42,7 +42,7 @@ export const AdicionarCategoria = () => {
                 <input type="text" class="form-control" placeholder="Descrição"  onChange={(e) => setDescricao(e.target.value)}/>
         </div>
     </div>
-    <Button type="submit"></Button>
+    <Button type="submit">Cadastrar Categoria</Button>
         </form>
       )
     

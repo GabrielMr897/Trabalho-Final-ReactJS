@@ -20,6 +20,18 @@ export const RemoverProduto = () => {
             console.error("ops! ocorreu um erro" + err);
           });
       }, []);
+
+
+      const deletarFuncionario = (id) => {
+        api
+            .delete(`/produto/${id}`)
+            .then((response) => {
+              setResposta(response.status);
+            })
+            .catch((err) => {
+              console.error("ops! ocorreu um erro" + err);
+            });
+      }
     
 
 
@@ -27,7 +39,7 @@ export const RemoverProduto = () => {
         
         <>
         <h1>ESCOLHA UM DOS NOMES</h1>
-        <form onSubmit={(e) => editar(e)}>
+        <form onSubmit={(e) => deletarFuncionario(id)}>
      
         <select className="form-control form-control-lg" as="select" value={id} onChange={(e) => setId(e.target.value)}>
             {produtos.map((produto) => {
