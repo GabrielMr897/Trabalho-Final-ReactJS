@@ -1,4 +1,4 @@
-import React from 'react';
+'import React from 'react';
 import { Footer } from '../../components/Footer/Footer.jsx';
 import { Header } from "../../components/header/Header.jsx"
 import "./Sobre.css"
@@ -34,7 +34,7 @@ export const Sobre = () => {
                         </div>
                         <div class="mini">
                             <img src={fotopri} alt="Priscila" className="img2" />
-                            <h5>Priscila Durão</h5>
+                            <h5>Priscila DurÃ£o</h5>
                             <a className="small" href="https://github.com/Prisciladurao" target="_blank">GITHUB</a>
                         </div>
                         <div class="mini">
