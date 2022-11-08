@@ -11,6 +11,7 @@ export const EditarProduto = () => {
     
     
     const [produtos, setProdutos] = useState([]);
+    const [produtoU, setProdutoU] = useState([]);
     const [id, setId] = useState();
     const [nome, setNome] = useState("")
     const [descricao, setDescricao] = useState("")
@@ -30,19 +31,35 @@ export const EditarProduto = () => {
           });
       }, []);
 
+      useEffect(() => {
+        api
+          .get(`/produto/${id}`)
+          .then((response) => {
+            setProdutoU(response.data);
+          })
+          .catch((err) => {
+            console.error("ops! ocorreu um erro" + err);
+          });
+      }, [id]);
+
 
       
       const editar = (e) => {
         e.preventDefault();
-
-      
        
 
 
         api
           .put(`/produto/${id}`, {
+              dataFabricacao: produtoU.dataFabricacao,
               descricao: descricao,
+              fotoLink: produtoU.fotoLink,
+              idCategoria: produtoU.idCategoria,
+              idFuncionario: produtoU.idFuncionario,
               nome: nome,
+              id: produtoU.id,
+              nomeCategoria: produtoU.nomeCategoria,
+              nomeFuncionario: produtoU.nomeFuncionario,
               qtdEstoque: qtdEstoque,
               valor: valor
             

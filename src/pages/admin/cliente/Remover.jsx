@@ -6,7 +6,7 @@ import { useState, useEffect } from "react"
 
 import api from "../../../service/api.js"
 
-import "./cliente.css"
+import "../../cadastro/cadastro.css"
 
 
 export const RemoverCliente = () => {

@@ -22,7 +22,8 @@ export const RemoverProduto = () => {
       }, []);
 
 
-      const deletarFuncionario = (id) => {
+      const deletarFuncionario = (e) => {
+        e.preventDefault();
         api
             .delete(`/produto/${id}`)
             .then((response) => {
@@ -39,7 +40,7 @@ export const RemoverProduto = () => {
         
         <>
         <h1>ESCOLHA UM DOS NOMES</h1>
-        <form onSubmit={(e) => deletarFuncionario(id)}>
+        <form onSubmit={(e) => deletarFuncionario(e)}>
      
         <select className="form-control form-control-lg" as="select" value={id} onChange={(e) => setId(e.target.value)}>
             {produtos.map((produto) => {

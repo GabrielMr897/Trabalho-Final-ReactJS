@@ -28,7 +28,7 @@ export const EditarCategoria = () => {
       }, []);
 
       const editar = (e) => {
-    
+        e.preventDefault();
         api
           .put(`/categoria/${id}`, {
             nome: nome,
