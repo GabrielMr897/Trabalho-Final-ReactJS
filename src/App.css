@@ -5,10 +5,14 @@
 }
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
 }
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
+  width: 100%;
+  height: 100%;
 }
 .background {
   background: #f6f9fc;
@@ -29,6 +33,13 @@ body {
 .d_flex {
   display: flex;
   justify-content: space-between;
+}
+
+.d_flexwrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
 .c_flex {
   display: flex;
@@ -145,7 +156,7 @@ button {
 }
 /*---------product-----------*/
 .product {
-  background: #fff;
+  background: #f3f5f9;
   padding: 20px;
   position: relative;
   border-radius: 8px;
@@ -267,4 +278,10 @@ button {
 
 .read-the-docs {
   color: #888;
+}
+
+@media (max-width: 1048px) {
+  .d_flexwrap {
+    flex-wrap: wrap;
+  }
 }

@@ -1,0 +1,101 @@
+.itens-carrinho {
+  height: auto;
+  padding: 50px 0;
+  display: flex;
+}
+
+.itens-carrinho .total-carrinho {
+  width: 30rem;
+  margin-top: 30px;
+  margin-left: 30px;
+  height: 130px;
+}
+.lista-carrinho {
+  background: #f3f5f9;
+  margin-top: 30px;
+}
+
+.trash:hover {
+  color: RGB(91, 172, 179);
+}
+
+.imagem-carrinho .img {
+  width: 150px;
+  height: 150px;
+}
+.itens-carrinho img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.itens-carrinho .detalhes-carrinho h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.itens-carrinho .detalhes-carrinho h4 {
+  font-size: 15px;
+  font-weight: 400;
+  margin-top: 50px;
+  color: grey;
+}
+.itens-carrinho h4 span {
+  color: RGB(91, 172, 179);
+  font-weight: 700;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.removendoC {
+  background: none;
+  font-size: 25px;
+  text-align: right;
+  margin-right: 10px;
+}
+.controleCarrinho {
+  margin-top: 50px;
+}
+.controleCarrinho button {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.incCarrinho {
+  background: none;
+  border: 1px solid rgb(3 0 71 / 9%);
+  color: RGB(91, 172, 179);
+  font-weight: 700;
+}
+.desCarrinho {
+  background: #f6f9fc;
+}
+.total-carrinho h4 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.total-carrinho h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: RGB(91, 172, 179);
+  font-weight: 700;
+}
+.total-carrinho h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(3 0 71 / 9%);
+  padding-bottom: 10px;
+  color: RGB(91, 172, 179);
+  font-weight: 700;
+}
+.vazio {
+  color: RGB(91, 172, 179);
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 30px;
+  height: 130px;
+}
+
+button.trash {
+  background: none;
+}

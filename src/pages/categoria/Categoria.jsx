@@ -52,7 +52,7 @@ export const Categoria = () => {
         
        return (
         <>
-        <Header/>
+
 
         <h1>{categoria.nome}</h1>
         <Container>
@@ -71,7 +71,7 @@ export const Categoria = () => {
         })}
          </Container>
 
-        <Footer/>
+
         </>
         )
        

@@ -1,21 +1,26 @@
-/*------search-----------*/
-.search {
-  padding: 20px 0;
+.busca {
+  padding: 20px 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 100%;
+  margin: 0 auto;
 }
-.search .logo img {
+.busca .logo img {
   width: 80px;
   height: 80px;
 }
-.search .width {
-  width: 20%;
-}
-.search-box {
+
+.busca-box {
   width: 80%;
   border: 2px solid rgba(0, 0, 0, 0.1);
   /*padding: 10px;*/
   border-radius: 50px;
 }
-.search-box i {
+.linkIcon:hover {
+  color: RGB(91, 172, 179);
+}
+.busca-box i {
   width: 5%;
   display: flex;
   align-items: center;
@@ -24,7 +29,7 @@
   padding: 15px 20px;
   font-size: 17px;
 }
-.search-box input {
+.busca-box input {
   width: 100%;
   padding: 10px;
   text-align: left;
@@ -32,15 +37,15 @@
 ::placeholder {
   font-size: 15px;
 }
-.search-box span {
+.busca-box span {
   width: 20%;
   opacity: 0.5;
   padding: 10px;
 }
-.cart {
+.carrinho {
   position: relative;
 }
-.search .cart span {
+.busca .carrinho span {
   position: absolute;
   top: -10px;
   right: 0px;
@@ -52,10 +57,10 @@
   font-size: 12px;
   color: #fff;
 }
-.search .f_flex {
+.busca .f_flex {
   justify-content: end;
 }
-/*------search-----------*/
+/*------busca-----------*/
 
 header {
   height: 8vh;
@@ -81,7 +86,7 @@ header ul li a:hover {
 .open {
   display: none;
 }
-.search.active {
+.busca.active {
   height: 12vh;
   position: fixed;
   top: 0;
@@ -119,6 +124,14 @@ header ul li a:hover {
   header .link {
     display: none;
   }
+  .busca-box {
+    display: none;
+  }
+
+  .busca {
+    justify-content: space-around;
+  }
+
   .close,
   .open {
     position: absolute;

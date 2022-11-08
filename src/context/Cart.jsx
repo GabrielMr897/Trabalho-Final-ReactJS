@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const CartContext = createContext({});
 
 export const CartProvider = ({ children }) => {
-  const [produtoCart, setProdutoCart] = useState();
+  const [produtoCarrinho, setProdutoCarrinho] = useState([]);
 
-  function addItemCart(id, fotolink, nome, valor) {
-    const itemObject = [...produtoCart];
+  function adcionandoItem(id, fotolink, nome, valor) {
+    const itemObject = [...produtoCarrinho];
     const item = itemObject.find((produto) => produto.id === id);
     if (!item) {
       itemObject.push({
@@ -19,41 +19,42 @@ export const CartProvider = ({ children }) => {
     } else {
       item.quantidade = item.quantidade + 1;
     }
-    setProdutoCart(itemObject);
+    setProdutoCarrinho(itemObject);
+    
   }
 
-  function removeItemCart(id) {
-    const itemObject = [...produtoCart];
+  function removendoItemCarrinho(id) {
+    const itemObject = [...produtoCarrinho];
     const item = itemObject.find((produto) => produto.id === id);
 
     if (item && item.quantidade > 1) {
       item.quantidade = item.quantidade - 1;
-      setProdutoCart(itemObject);
+      setProdutoCarrinho(itemObject);
     } else {
       const arrayFiltered = itemObject.filter((produto) => produto.id !== id);
-      setProdutoCart(arrayFiltered);
+      setProdutoCarrinho(arrayFiltered);
     }
   }
 
-  function removeItem(id){
-    const itemObject = [...produtoCart]
+  function removendoItem(id){
+    const itemObject = [...produtoCarrinho];
 
     const arrayFiltered = itemObject.filter((produto)=>produto.id !==id)
-    setProdutoCart(arrayFiltered)
+    setProdutoCarrinho(arrayFiltered)
   }
 
-  function clearCart(){
-    setProdutoCart([])
+  function limpandoCarrinho(){
+    setProdutoCarrinho([])
   }
 
   return (
     <CartContext.Provider
         value={{
-            produtoCart,
-            addItemCart,
-            removeItemCart,
-            removeItem,
-            clearCart,
+            produtoCarrinho,
+            adcionandoItem,
+            removendoItemCarrinho,
+            removendoItem,
+            limpandoCarrinho,
         }}>
             {children}
     </CartContext.Provider>
