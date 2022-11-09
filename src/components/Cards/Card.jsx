@@ -55,8 +55,8 @@ export const Card = styled.div`
   }
   `;
  export const Fixo = styled.div`
- display: grid;
- grid-template-columns: 50% 50%;
+ display: flex;
+flex-wrap: wrap;
  min-height: ${pxvwp(200, 320)};
  padding: ${pxvwp(32)};
  margin: ${pxvwp(20)};
