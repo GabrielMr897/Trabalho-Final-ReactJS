@@ -22,6 +22,8 @@ Balacobaco
 O projeto está desenvolvido utilizando as seguintes tecnologias:
 
 - ReactJS
+- Vite
+- Javascript
 
 --- 
 
